@@ -7,11 +7,14 @@
             bool playAgain = true;
             String player;
             String bot;
+            String answer;
 
             while (playAgain)
             {
                 player = "";
                 computer = "";
+                answer = "";
+
 
                 while (player != "ROCK" player != "PAPER" player != "SCISSORS") {
                     Console.Write("Choose wisely: ROCK, PAPER or SCISSORS: ");
@@ -22,24 +25,24 @@
                 switch ( random.Next(1,4))
                 {
                     case 1:
-                        computer = "ROCK"; break;
+                        bot = "ROCK"; break;
                     case 2:
-                        computer = "PAPER"; break;
+                        bot = "PAPER"; break;
                     case 3:
-                        computer = "SCISSORS"; break;
+                        bot = "SCISSORS"; break;
                 }
 
                 Console.WriteLine("Player: " + player);
-                Console.WriteLine("Computer: " + computer);
+                Console.WriteLine("Computer: " + bot);
 
                 switch (player)
                 {
                     case "ROCK":
-                        if (computer = "ROCK")
+                        if (bot = "ROCK")
                         {
                             Console.WriteLine("It's a draw!");
                         }
-                        else if (computer == "PAPER")
+                        else if (bot == "PAPER")
                         {
                             Console.WriteLine("You lose!");
                         }
@@ -65,11 +68,11 @@
                         break;
 
                         case "SCISSORS":
-                        if (computer = "ROCK")
+                        if (bot  = "ROCK")
                         {
                             Console.WriteLine("You lose!");
                         }
-                        else if (computer == "PAPER")
+                        else if (bot == "PAPER")
                         {
                             Console.WriteLine("You win!");
                         }
@@ -79,7 +82,21 @@
                         }
                         break;
                 }
+                Console.Write("Are you up to for one more game (Y/N): ");
+                answer = Console.ReadLine();
+                answer = answer.toUpper();
+
+                if (answer == "Y")
+                {
+                    playAgain = true;
+                }
+                else
+                {
+                    playAgain = false;
+                }
             }
+
+            Console.WriteLine("Thanks for playing!")
 
             Console.ReadKey();
         }
