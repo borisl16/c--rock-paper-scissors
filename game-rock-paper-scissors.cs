@@ -48,6 +48,36 @@
                             Console.WriteLine("You win!");
                         }
                         break;
+
+                        case "PAPER":
+                        if (computer = "ROCK")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        break;
+
+                        case "SCISSORS":
+                        if (computer = "ROCK")
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        break;
                 }
             }
 
