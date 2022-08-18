@@ -96,7 +96,7 @@
                 }
             }
 
-            Console.WriteLine("Thanks for playing!")
+            Console.WriteLine("Good game, thanks for playing!")
 
             Console.ReadKey();
         }
