@@ -1,4 +1,4 @@
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -16,7 +16,7 @@
                 answer = "";
 
 
-                while (player != "ROCK" player != "PAPER" player != "SCISSORS") {
+                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS") {
                     Console.Write("Choose wisely: ROCK, PAPER or SCISSORS: ");
                     player = Console.ReadLine();
                     player = player.ToUpper();
@@ -96,10 +96,9 @@
                 }
             }
 
-            Console.WriteLine("Good game, thanks for playing!")
+            Console.WriteLine("Good game, thanks for playing!");
 
             Console.ReadKey();
         }
 
     }
-}
